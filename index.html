@@ -10,14 +10,24 @@
     <div class="header">
         <h2>Student Portal</h2>
     </div>
-    <div class="search">
-        <div class="search-input">
-            <input type="text" id="search" placeholder="Search by Name">
-        </div>
-        <div class="search-button btn">
-            <button onclick="search()">Search</button>
-        </div>
+    <div class="search"> 
+            <input type="text" id="search-bar" placeholder="Search">
+            <button id="search-button" class="btn">Search</button>
     </div>
+
+    <div class="button-container">
+
+ <button onclick="sortByNameAsc()" id="sortybyasc">Sort A->Z</button>
+    <button onclick="sortByNameDesc()" id="sortbydesc">Sort Z->A</button>
+    <button onclick="sortByMarks()" id="sortbymarks">Sort By Marks</button>
+    <button onclick="filterByPassing()" id="sortbypassing">Sort By Passing</button>
+    <button onclick="sortByClass()" id="sortbyclass">Sort By Class</button>
+    <button onclick="sortByGender()" id="sortbygender">Sort By Gender</button>
+    </div>
+    <div id="table-container">
+
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
